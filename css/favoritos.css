@@ -1,0 +1,133 @@
+main {
+	margin: 20px 0 50px 0;
+}
+
+/* Container principal */
+.container {
+	display: flex;
+	flex-direction: column;
+	margin: 40px auto 0 auto;
+	width: 90vw;
+	max-width: 1100px;
+	background: #fff;
+	border-radius: 30px;
+	box-shadow: 0 2px 8px rgba(204, 203, 203, 0.2);
+	padding: 0 0 40px 0;
+}
+
+/* Título Meus Favoritos */
+.titulo1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	font-family: "Italiana", serif;
+	color: #b8696b;
+	text-align: center;
+	font-size: 2rem;
+	margin: 32px 0;
+	padding: 0;
+}
+
+.heart i {
+	color: #b8696b;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+
+/* Cards de favoritos */
+.produto-card {
+	background: white;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0;
+	padding: 24px 32px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e9d6d7;
+	position: relative;
+}
+
+.produto-card:first-child {
+	border-top: 1px solid #e9d6d7;
+}
+
+/* Imagem do produto */
+.produto-card img {
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 12px;
+	flex: 0 0 90px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Info do produto */
+.produto-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+	padding: 0 16px;
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.produto-info h3 {
+	margin: 0;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.6rem;
+	color: #b8696b;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Linha superior: título + ícones */
+.linha-superior {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+}
+
+/* Preço */
+.produto-info .preco {
+	margin: 0;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.5rem;
+	color: #5a3b3c;
+}
+
+/* Ícones à direita */
+.icones-superiores {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.icones-superiores button {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	color: #b8696b;
+	cursor: pointer;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: color 0.2s ease;
+}
+
+.icones-superiores button:hover {
+	color: #e75480;
+}
+
+.favorito-ativo,
+.btn-favorito.favorito-ativo {
+	color: #e75480 !important;
+}

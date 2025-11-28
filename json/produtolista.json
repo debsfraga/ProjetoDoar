@@ -1,0 +1,112 @@
+{
+    "lista": [
+        {
+            "imagem": "../img/brigadeiro.jpg",
+            "titulo": "Brigadeiro Gourmet de Chocolate",
+            "descricao":
+                "Uma explosão de sabor em cada mordida: nosso brigadeiro gourmet é cremoso por dentro, intenso no sabor e com aquele toque artesanal que derrete na boca. Perfeito pra quem acredita que felicidade vem em forma de bolinha!",
+            "preco": "R$2,50", 
+            "valorNumerico": 2.5, 
+            "id": 1
+        },
+        {
+            "imagem": "../img/palhaSemFundo.png",
+            "titulo": "Palha Italiana Artesanal",
+            "descricao":
+                "Uma delícia de textura única! Feita com brigadeiro gourmet e pedaços crocantes de biscoito amanteigado, nossa palha italiana é o equilíbrio perfeito entre cremosidade e crocância. Finalizada com uma leve camada de açúcar confeiteiro, é impossível comer só uma!",
+            "preco": "R$6,00",
+            "valorNumerico": 6.0,
+            "id": 2
+        },
+        {
+            "imagem": "../img/paoSemFundo.png",
+            "titulo": "Pão de Mel Gourmet",
+            "descricao":
+                "Um clássico que aquece o coração! Nosso pão de mel é feito com uma massa fofinha e aromática, recheado com doce de leite cremoso e mergulhado em chocolate meio amargo de alta qualidade. Uma combinação perfeita entre o sabor da infância e o toque sofisticado da confeitaria artesanal.",
+            "preco": "R$6,00",
+            "valorNumerico": 6.0,
+            "id": 3
+        },
+        {
+            "imagem": "../img/trufa.png",
+            "titulo": "Trufas Gourmet",
+            "descricao":
+                "Cada trufa é uma explosão de sabor envolta em chocolate nobre e recheios cremosos que conquistam desde o primeiro pedaço. Escolha seu favorito (ou todos!)",
+            "preco": "R$5,00",
+            "valorNumerico": 5.0,
+            "id": 4
+        },
+        {
+            "imagem": "../img/boloDePote.png",
+            "titulo": "Bolo de Pote - Ninho com Morango",
+            "descricao":
+                "Uma combinação apaixonante em camadas! Nosso bolo de pote de Ninho com Morango é feito com massa branca fofinha, recheio super cremoso de leite Ninho, geleia de morango e morangos fresquinhos picados, tudo isso finalizado com mais creme e um toque de carinho em cada pote. Doce na medida certa, leve e irresistível — é como um abraço em forma de sobremesa!",
+            "preco": "R$12,00",
+            "valorNumerico": 12.0,
+            "id": 5
+        },
+        {
+            "imagem": "../img/tortaFrango.png",
+            "titulo": "Torta de Frango Cremosa",
+            "descricao":
+                "Uma explosão de sabor e carinho em cada pedaço! Nossa torta cremosa de frango é feita com massa leve e amanteigada, recheada com um frango desfiado super temperadinho, refogado com ervas e cremosidade na medida certa. Cada fatia é puro conforto, com aquele sabor caseiro que abraça o coração e agrada todos os paladares. Ideal pra um lanchinho especial ou um almoço caprichado!",
+            "preco": "R$70,00",
+            "valorNumerico": 70.0,
+            "id": 6
+        },
+        {
+            "imagem": "../img/brownie.png",
+            "titulo": "Brownie",
+            "descricao":
+                "Um pedacinho do paraíso em forma de chocolate! Nosso brownie é denso, úmido e com aquele centro molhadinho que derrete na boca. A casquinha crocante por cima contrasta perfeitamente com o interior macio e super chocolatudo, feito com cacau de qualidade e muito amor. Ideal pra acompanhar um café, um sorvetinho ou simplesmente devorar sozinho sem culpa. Porque tem coisa que é feita pra adoçar a vida!",
+            "preco": "R$7,00",
+            "valorNumerico": 7.0,
+            "id": 7
+        },
+        {
+            "imagem": "../img/tortaMorango.png",
+            "titulo": "Torta de Morango",
+            "descricao":
+                "Leve, cremosa e simplesmente apaixonante! Nossa torta de morango é feita com uma base amanteigada que desmancha na boca, recheada com um creme branco suave e delicado, e coberta com morangos frescos selecionados — tudo finalizado com aquela geleia brilhante que dá o toque de confeitaria dos sonhos. É a sobremesa perfeita pra quem ama o equilíbrio entre o doce e o frescor da fruta. Um clássico que nunca sai de moda!",
+            "preco": "R$70,00",
+            "valorNumerico": 70.0,
+            "id": 8
+        },
+        {
+            "imagem": "../img/quiche.png",
+            "titulo": "Quiche",
+            "descricao":
+                "Delicada, saborosa e irresistivelmente elegante! Nossa quiche é feita com uma massa leve e amanteigada que abraça um recheio cremoso à base de ovos, creme de leite fresco e queijo — tudo perfeitamente equilibrado com ingredientes selecionados como presunto, espinafre, bacon ou o que há de melhor no seu sabor preferido. Assada até dourar, ela entrega uma explosão de sabores a cada mordida. Ideal para um brunch estiloso, lanche reforçado ou até aquele jantar que pede sofisticação sem complicação.",
+            "preco": "R$60,00",
+            "valorNumerico": 60.0,
+            "id": 9
+        },
+        {
+            "imagem": "../img/tortaLimao.png",
+            "titulo": "Torta de Limão",
+            "descricao":
+                "Refrescante, cremosa e com aquele azedinho na medida certa! Nossa torta de limão é feita com uma base crocante de biscoito amanteigado, que contrasta perfeitamente com o recheio suave de mousse de limão — leve, aerado e cheio de sabor. Por cima, um toque de chantilly delicado ou merengue maçaricado, finalizado com raspinhas de limão siciliano pra aquele charme visual e aroma irresistível. Uma sobremesa clássica que nunca sai de moda e conquista todos os paladares com sua leveza e sofisticação.",
+            "preco": "R$60,00",
+            "valorNumerico": 60.0,
+            "id": 10
+        },
+        {
+            "imagem": "../img/mousse.png",
+            "titulo": "Mousse de Chocolate",
+            "descricao":
+                "Uma explosão de sabor e textura! Nosso mousse de chocolate é feito com chocolate nobre, garantindo aquele gostinho intenso e marcante que derrete na boca. Com uma textura leve, aerada e ao mesmo tempo cremosa, ele entrega o equilíbrio perfeito entre doçura e sofisticação. Servido geladinho, é a sobremesa ideal pra quem ama chocolate de verdade e não abre mão de um toque gourmet no dia a dia. Puro prazer em cada colherada!",
+            "preco": "R$40,00",
+            "valorNumerico": 40.0,
+            "id": 11
+        },
+        {
+            "imagem": "../img/orcamento.png",
+            "titulo": "Orçamento para Festas",
+            "descricao":
+                "Planejando uma comemoração especial? A gente te ajuda a transformar esse momento em algo inesquecível! Montamos orçamentos sob medida para aniversários, chás, confraternizações, eventos corporativos e qualquer ocasião que mereça ser celebrada com muito sabor e carinho.Você escolhe os produtos, os sabores e a quantidade — e nós cuidamos de tudo com aquele toque artesanal e caprichado que todo evento merece! Entre em contato e solicite seu orçamento sem compromisso. Vamos montar juntos uma mesa deliciosa do jeitinho que você sonhou!",
+            "preco": "Faça um orçamento",
+            "valorNumerico": 0,
+            "id": 12
+        }
+    ]
+}

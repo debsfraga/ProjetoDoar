@@ -1,0 +1,124 @@
+<html>
+<head>
+    <title>Contato Delícias da Tuty</title>
+    <link href="css/contato.css"rel= "stylesheet">
+    <link href="css/global.css"rel= "stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="divHeader">
+            <!--Logotipo-->
+            <a href="index.html"><img src="../img/logo_grande.png" title="Delícias da Tuty" class="logo"></a>
+            <!--Menu-->
+            <nav> <!--barra de navegação-->
+                <ul>
+                    <!--Itens Menu-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--Conteúdo do site-->
+
+    <main>
+        <!--Título-->
+        <ul class="contatos-titulo">
+            <li class="contatos-item">Contato</li>
+        </ul>
+        <div id="formRetorno" class="divRetorno">
+            <p id="textoRetorno" class="texto-contatos"></p>
+        </div>
+        <div id="formulario">
+        
+            <p class="texto-contatos">
+            Será um prazer te atender e oferecer o conforto que você merece. Aqui, cada detalhe é pensado para que você
+            se sinta em casa com o mesmo carinho de um doce feito à mão.
+            <br><br>Fale com a gente pelo Instagram, WhatsApp ou envie sua dúvida aqui pelo formulário. Vai ser um prazer te
+            atender. Estamos à disposição para te ajudar e adoçar ainda mais o seu dia :)
+            </p>
+
+        <form id="frmContato">
+            
+            <!--Caixa em volta FIELDSET-->
+            <fieldset>
+                <legend> Dados Pessoais </legend>
+
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nomesobrenome" name="nome" class="input-padrao" required placeholder="Digite seu nome aqui">
+                <!--campo obrigaório required-->
+
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="input-padrao" required placeholder="seuemail@gmail.com">
+                <!--placeholder orientação do que escrver no campo-->
+               
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" class="input-padrao" required placeholder="(xx)xxxx-xxxx">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="70" rows="10" class="input-padrao" placeholder="Digite sua Mensagem"></textarea>
+                <!--cols coluna rows linhas -->
+                
+                <label>Como prefere o nossso contato?
+                    <input type="radio" name="contato">E-Mail
+                    <input type="radio" name="contato">Telefone
+                    <input type="radio" name="contato">WhatsApp
+                </label>
+                <br><br>
+                <label> Qual o motivo do seu contato?</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                </select>
+            </fieldset>
+
+
+        <label class="chk">
+            <input type="checkbox" name="novidades">
+            Gostaria de receber nossas novidades e lançamentos por E-mail?
+            </label>
+
+            <input type="submit" value="Enviar" id="enviar" class="enviar">
+        </form>
+        </div>
+    </main>
+        <ul class="contatos-titulo"></ul>
+
+    <!--Rodapé do site-->
+    <footer>
+      <div class="logo_rodape">
+        <img src="img//logo_redonda-cortada.png" alt="Delícias da Tuty">
+      </div>
+
+      <div class="conteudo_footer">
+        <nav class="footer_menu">
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+        </nav>
+
+      <div class="social_icons">
+        <a href="mailto:rota_gastronomica@gamil.com">
+          <i class="bi bi-envelope-fill"></i>
+        </a> 
+        <a href="https://instagram.com/delicias.da.tuty" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511971187204" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+
+        <a class="copyright">Copyright &copy; Delícias da Tuty 2025</a>
+      </div>
+    </footer>
+        <script src="js/contato.js"></script>
+    </body>
+</html>

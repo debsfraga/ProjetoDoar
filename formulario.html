@@ -1,0 +1,165 @@
+<html>
+<head>
+    <title>Delícias da Tuty</title>
+    <link href="../css/contato.css"rel= "stylesheet">
+    <link href="../css/global.css"rel= "stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="divHeader">
+            <!--Logotipo-->
+            <a href="index.html"><img src="../img/logo_grande.png" title="Delícias da Tuty" class="logo"></a>
+            <!--Menu-->
+            <nav> <!--barra de navegação-->
+                <ul>
+                    <!--Itens Menu-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--Conteúdo do site-->
+
+    <main>
+        <!--Título-->
+        <ul class="contatos-titulo">
+            <li class="contatos-item">Formulário de Encomenda</li>
+        </ul>
+        <div id="formRetorno" class="divRetorno">
+            <p id="textoRetorno" class="texto-contatos"></p>
+        </div>
+        <div id="formulario">
+        
+            <p class="texto-formulario">
+              Faça sua encomenda com carinho e sabor!
+              <br>
+              Aqui na Delícias da Tuty, tudo é feito sob medida para tornar sua comemoração ainda mais especial!
+              Para garantir que tudo saia do jeitinho que você imaginou, pedimos que preencha o formulário abaixo com o máximo de detalhes possível.
+              Assim que recebermos sua solicitação, entraremos em contato para confirmar os detalhes, prazos, formas de pagamento e entrega.
+              <br>
+              Pedimos pelo menos 3 dias de antecedência para encomendas simples e 7 dias para bolos temáticos ou grandes volumes.
+              <br>
+              Vamos adoçar a sua festa?
+            </p>
+
+        <form id="frmContato">
+            
+            <!--Caixa em volta FIELDSET-->
+            <fieldset>
+                <legend>Informações da Encomenda</legend>
+                <h3>Iformações do Cliente</h3>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nomesobrenome" name="nome" class="input-padrao" required placeholder="Digite seu nome aqui">
+                <!--campo obrigaório required-->
+
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="input-padrao" required placeholder="seuemail@gmail.com">
+                <!--placeholder orientação do que escrver no campo-->
+               
+                <div class="alinhamento">
+                <label for="telefone">Telefone
+                  <input type="tel" id="telefone" name="telefone" class="input-padrao" required placeholder="(xx)xxxx-xxxx">
+                </label>
+                
+                <br><br>
+                <label for="date">Data do Evento
+                  <input type="date" id="data" name="data-evento" class="input-padrao" required>
+                </label>
+                
+                </div>
+
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" class="input-padrao" required placeholder="Ex.: Rua xxxxxx xxxxxxx">
+            
+                <!--cols coluna rows linhas -->
+              <br><br>
+              <label for="detalhes"><h3>Detalhes do Pedido</h3></label>
+
+              <div class="checkbox-grid">
+                <label class="check-label"><input type="checkbox" name="bolo"> Bolo</label>
+                <label class="check-label"><input type="checkbox" name="torta"> Torta</label>
+                <label class="check-label"><input type="checkbox" name="brigadeiros"> Brigadeiros</label>
+                <label class="check-label"><input type="checkbox" name="salgados"> Salgados</label>
+                <label class="check-label"><input type="checkbox" name="cupcakes"> Cupcakes</label>
+                <label class="check-label"><input type="checkbox" name="doces"> Doces</label>
+              </div>
+                <br><br>
+
+                <label for="mensagem">Descrição</label>
+                <textarea id="descricao" name="descricao" cols="70" rows="10" class="input-padrao" placeholder="Sabores, temas, recheios, cores, etc."></textarea>
+                <br><br>
+
+                <!--Div para manter esses campos alinhados um ao lado do outro-->
+              <div class="alinhamento">
+                <label for="quantidade">Quantidade:
+                  <input type="number" name="quantidade" min="0" class="input-padrao" placeholder="Ex.: 100"></label>
+                <br>
+                <label for="quantidade">Peso do bolo/torta (em kg):
+                  <input type="text" name="peso" placeholder="Ex: 2,5 kg" class="input-padrao">
+                </label>
+                <br>
+                <label for="quantidade">N° estimado de convidados:
+                  <input type="number" name="quantidade" min="1" class="input-padrao" placeholder="Ex.: 50">
+                </label>
+                <br>
+              </div>
+
+                <label for="quantidade">Restrições alimentares:</label>
+                <input type="text" name="restricoes" placeholder="Ex: sem lactose, sem glúten..." class="input-padrao">
+                <br><br>
+                <label>Entrega ou Retirada?</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>Retirada</option>
+                    <option>Entrega no endereço informado</option>
+                </select>
+
+                <br><br>
+
+                <legend>Observações adicionais:</legend>
+                <textarea name="observacoes" rows="4" placeholder="Nome no bolo, horário desejado, embalagens, etc."></textarea>
+              </fieldset>
+
+            <input type="submit" value="Enviar" id="enviar" class="enviar">
+        </form>
+        </div>
+    </main>
+        <ul class="contatos-titulo"></ul>
+
+    <!--Rodapé do site-->
+    <footer>
+      <div class="logo_rodape">
+        <img src="../img//logo_redonda-cortada.png" alt="Delícias da Tuty">
+      </div>
+
+      <div class="conteudo_footer">
+        <nav class="footer_menu">
+          <a href="sobrenos.html">Sobre</a>
+          <a href="#"><a href="contato.html">Contato</a></a>
+        </nav>
+
+      <div class="social_icons">
+        <a href="mailto:rota_gastronomica@gamil.com">
+          <i class="bi bi-envelope-fill"></i>
+        </a> 
+        <a href="https://instagram.com/delicias.da.tuty" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://wa.me/5511971187204" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+
+        <a class="copyright">Copyright &copy; Delícias da Tuty 2025</a>
+      </div>
+    </footer>
+        <script src="./js/formulario.js"></script>
+    </body>
+</html>

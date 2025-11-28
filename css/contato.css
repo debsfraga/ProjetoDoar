@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Italiana&display=swap');
+
+main{
+    flex:1;
+}
+
+/* Estilização BODY do site */
+body {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  font-family: 'Italiana', serif;
+  font-style: bold;
+  font-size: large;
+  background-color: #f5f7fa;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+/* Estilização do header do site */
+.logo {
+  width: 12%;
+  margin: 2px 2px -20px 10px;
+}
+
+header {
+  background-color: #f9e9e9;
+  position: relative;
+}
+
+/*Estilização da DIV do header*/
+.divHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px;
+  height: 150px;
+}
+
+/*Estilização do MENU do site*/
+nav {
+  font-family: 'Italiana', serif;
+  font-style: bold;
+  font-size: 4.0rem;
+  /*position: absolute;*/
+  top: 70px;
+  right: 0;
+  display: inline;
+}
+
+nav li {
+  font-family: 'Italiana', serif;
+  font-style: bold;
+  font-size: 3.5rem;
+  display: flex;
+  color: #b8696b;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+  
+  /* Campo de busca com ícone */
+  .group {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #a05b5b;
+  border-radius: 6px;
+  padding: 4px 8px;
+  }
+  
+  .group .icon {
+  width: 18px;
+  height: 18px;
+  fill: #a05b5b;
+  margin-right: 5px;
+  }
+  
+  .group .input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  }
+  /*estiliação de Produtos*/
+  .produtos {
+    align-items: left;
+  }
+
+/*botão COMPRE AQUI*/
+  .btncompra{
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #b8696b;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #d18e9059;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #b8696b;
+  }
+  
+  .btncompra:hover {
+  color: #f9e9e9;
+  box-shadow: inset 0 -100px 0 0 #b8696b;
+  }
+  
+  .btncompra:active {
+  transform: scale(0.9);
+  }
+  
+/*barra de PESQUISA*/
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+   }
+   
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #815253e5;
+  transition: .3s ease;
+   }
+   
+.input::placeholder {
+  color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+  outline: none;
+  border-color: black;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+   }
+  
+/*Estiliazção dos botões do menu*/
+.botao {
+  outline: 0 !important;
+  border: 0 !important;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#b8696b;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.botao:hover {
+  transform: translateY(-3px);
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Título */
+.contatos-titulo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #b8696b;
+  list-style: none;
+  font-family: 'Italiana', serif;
+  font-style: bold;
+  text-align: center;
+  padding: 0;
+  margin: 30px 0;
+}
+
+/* TEXTO TELA DE CONTATOS */
+.texto-contatos {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: bold;
+  padding-left: 3%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 70%;
+  width: 75vw;
+  margin: 20px auto 40px auto;
+}
+
+/* TEXTO TELA DE FORMULÁRIO */
+.texto-formulario {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: bold;
+  padding-left: 3%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 100%;
+  width: 75vw;
+  margin: 20px auto 40px auto;
+}
+
+#formulario {
+  background-color: #b8696b; /* mantém a cor vermelha */
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(7, 26, 61, 0.2);
+  padding: 40px 5%;
+  max-width: 900px;
+  margin: 50px auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* TEXTOS DO FORMULÁRIO */
+#formulario label,
+#formulario legend,
+#formulario .texto-contatos {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* FIELDSET */
+fieldset {
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 30px 5%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* CAMPOS PADRÃO */
+.input-padrao,
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-family: inherit;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.input-padrao:focus {
+  border-color: #d4a373;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.2);
+}
+
+.radio-group {
+  margin: 15px 0;
+}
+
+.radio-group label {
+  display: inline;
+  margin-right: 15px;
+  color: white;
+}
+
+.chk {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.chk input {
+  margin-right: 10px;
+  transform: scale(1.2);
+  margin: 0 40px; /* centraliza */
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 1rem;
+  justify-items: start; /* alinha à esquerda */
+}
+
+select.input-padrao {
+  background-color: white;
+  color: #b8696b;
+    
+}
+
+/*Estização da div Alinhamento*/
+.alinhamento {
+  display: flex;
+  gap: 1rem; /* espaçamento entre os campos */
+  flex-wrap: wrap; /* quebra em telas pequenas */
+}
+
+.alinhamento label {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* todos ocupam o mesmo espaço */
+  min-width: 150px;  /*pra não ficarem muito apertados */
+}
+
+/* BOTÃO ENVIAR */
+.enviar {
+  display: block;
+  margin: 0 auto;
+  width: 200px; 
+  padding: 12px 0;
+  background-color: #f9e9e9;
+  color: #b8696b;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.enviar:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Div do retorno do formulário */
+.divRetorno {
+  display: none;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9e9e9;
+  border-left: 4px solid #b8696b;
+  max-width: 80%;
+  text-align: center;
+}
+
+.divRetorno p {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+/*Estilizaçâo do footer*/
+footer {
+  background-size: cover;
+  background-position: center;
+  background-color: #b8696b;
+  padding-top: 80px;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+.logo_rodape {
+  position: absolute;
+  top: -300px; /*sobe o cículo*/
+  left: 50%;
+  transform: translate(-50%);
+  width: 120px;
+  height: 120%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_rodape img{
+  width: 1500%;
+  z-index: 5;
+}
+
+.conteudo_footer {
+  padding-top: 40px;
+}
+
+.footer_menu a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.0rem;
+}
+
+.flag {
+  width: 30px;
+}
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social_icons a {
+  color: white;
+  font-size: 24px;
+  transition: color 0,3s;
+}
+
+.social_icons a:hover {
+  color: rgb(197, 171, 171);
+}
+
+.copyright {
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .divHeader {
+        width: 95%;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .logo {
+        width: 15%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    fieldset {
+        width: 85%;
+        padding: 15px;
+    }
+
+    .enviar {
+        width: 80%;
+    }
+
+    .logo_footer {
+        width: 20%;
+        margin-left: 75%;
+    }
+
+    .texto-contatos {
+        width: 90vw;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Italiana&display=swap');
+
+/* Estilização do BODY do site */
+body {
+    margin: 0;
+    border: 0;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    overflow: visible !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilização da Logo*/
+.logo {
+    width: 50%;
+    margin: 2px 2px -20px 10px;
+}
+
+/* Estilização do Header*/
+header {
+    background-color: #f9e9e9;
+    position: relative;
+    overflow: visible;
+    z-index: 50;
+}
+
+/* Estilização da DIV do header*/
+.divHeader {
+    position: relative;
+    overflow: visible !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+    height: 150px;
+    min-height: 70px;
+}
+
+/* Estilização do MENU do site*/
+nav {
+    position: relative;
+    overflow: visible !important;
+    font-family: 'Italiana', serif;
+    font-style: bold;
+    font-size: large;
+    top: 2px;
+    right: 0;
+    display: inline;
+    z-index: 100;
+}
+
+nav li {
+    font-family: 'Italiana', serif;
+    font-style: bold;
+    font-size: large;
+    display: flex;
+    color: #b8696b;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    overflow: visible !important;
+    flex-shrink: 0;
+}
+
+
+
+nav ul li {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+/*Estilização da barra de pesquisa*/
+/* From Uiverse.io by LightAndy1 */
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 1000px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.select {
+    position: absolute;
+    left: 10px;
+    font-family: 'Italiana', serif;
+    font-size: large;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #b8696b;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    appearance: none;
+}
+
+.buscar {
+    font-family: 'Italiana', serif;
+    width: 100%;
+    height: 50px;
+    padding-left: 160px;
+    padding-right: 50px;
+    box-shadow: 0 0 0 1.5px #b8696b, 0 0 25px -17px #b8696b;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+    outline: none;
+    color: #bdbecb;
+    transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: text;
+    z-index: 0;
+}
+
+.buscar::placeholder {
+    color: #bdbecb;
+}
+
+.buscar:hover {
+    box-shadow: 0 0 0 2.5px #b8696b, 0px 0px 25px -15px #000;
+}
+
+.buscar:active {
+    transform: scale(0.95);
+}
+
+.buscar:focus {
+    box-shadow: 0 0 0 2.5px #b8696b;
+}
+
+.search-icon {
+    position: absolute;
+    left: 550px;
+    fill: #bdbecb;
+    width: 1.2rem;
+    height: 1.2rem;
+    pointer-events: none;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilização dos botões do menu*/
+.botao {
+    outline: 0 !important;
+    border: 0 !important;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b8696b;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.invisivel {
+    display: none !important;
+}
+
+/* Estilização geral dos Modais (incluindo o do carrinho)*/
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixa na tela */
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px; /* Largura máxima para modais */
+    font-family: 'Cormorant Garamond', serif;
+    font-style: bold;
+    font-size: large;
+    border-radius: 12px;
+    text-align: center;
+    position: relative; /* Para posicionar o botão de fechar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar*/
+}
+
+.modal h2 {
+    font-family: 'Italiana', serif;
+    font-style: bold;
+    clear: left;
+    text-align: center;
+    color: #b8696b;
+    margin: 10px 0;
+}
+
+.fechar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.fechar:hover {
+    color: black;
+}
+
+/*Estilização do menu do usuário*/
+.usuario-menu {
+    position: relative;
+    display: inline-flex;
+    overflow: visible;
+    z-index: 9999;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+}
+
+.usuario-menu button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #b8696b;
+    font-size: 20px;
+    padding: 8px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+
+}
+
+.dropdown {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+
+    background-color: #ffffff;
+    border: 1px solid #e6b3b3;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    padding: 8px 0;
+    z-index: 10000 !important;
+    min-width: 160px;
+
+    /*Transição suave (sem reflow)*/
+    opacity: 0;
+    transform: translate(-5px) scale(0.95);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown:not(.hidden) {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    visibility: visible;
+}
+
+.dropdown a {
+    padding: 10px 20px;
+    color: #9b5b5b;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown a:hover {
+    background-color: #f2dcdc;
+}
+
+.hidden {
+    display: none !important;/*important para subrescrever o display: flex se necessário*/
+    visibility: hidden;
+}
+
+/* Estilização do Carrinho*/
+#lista-carrinho {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#lista-carrinho div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Alinha itens verticalmente */
+    margin-bottom: 10px;
+    padding: 5px 0;
+    /* Adiciona um pouco de padding */
+    border-bottom: 1px solid #eee;
+    /* Linha divisória para os itens */
+}
+
+#lista-carrinho div:last-child {
+    border-bottom: none;
+    /* Remove a linha do último item */
+}
+
+#lista-carrinho button {
+    background: #b8696b;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    /* Tamanho da fonte do botão remover */
+}
+
+#lista-carrinho button:hover {
+    background-color: #984f51;
+    /* Efeito hover */
+}
+
+#total-carrinho {
+    text-align: right;
+    font-size: 1.3em;
+    /* Um pouco maior */
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 10px;
+    /* Espaço em cima */
+    border-top: 1px solid #ddd;
+    /* Linha para separar do total */
+}
+
+/* Estilização do botão Finalizar Compra no carrinho*/
+.btn-finalc {
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto;
+    position: relative;
+    align-items: center;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #b8696b;
+    border: 2px solid #b8696b;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    width: 300px;
+    height: 50px;
+}
+
+.btn-finalc::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100px;
+    height: 80px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #b8696b;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.btn-finalc:hover::before {
+    scale: 3;
+}
+
+.btn-finalc:hover {
+    color: #f9e9e9;
+    scale: 1.1;
+    box-shadow: 0 0px 20px #5f393a;
+}
+
+.btn-finalc:active {
+    scale: 1;
+}
+
+/* Estilização do rodapé*/
+footer {
+    background-size: cover;
+    background-position: center;
+    background-color: #b8696b;
+    padding-top: 15px;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.logo_rodape {
+    position: absolute;
+    top: -75px; /*sobe o cículo*/
+    left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_rodape img {
+    width: 250%;
+}
+
+.conteudo_footer {
+    padding-top: 50px;
+}
+
+.footer_menu a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.flag {
+    width: 30px;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social_icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social_icons a:hover {
+    color: rgb(197, 171, 171);
+}
+
+.copyright {
+    text-decoration: none;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: bold;
+}

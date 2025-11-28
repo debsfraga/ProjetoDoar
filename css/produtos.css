@@ -1,0 +1,307 @@
+.heart .bi-heart-fill {
+	color: #e75480 !important;
+	transition: color 0.2s;
+}
+/* Favorito ativo (rosa) */
+.favorito-ativo, .heart.favorito-ativo i, .btn-favorito.favorito-ativo, .heart.favorito-ativo .bi-heart-fill {
+	color: #e75480 !important;
+}
+/* Botão Mais Detalhes nos cards */
+.btn-mais-detalhes {
+	margin-top: 16px;
+	width: 100%;
+	padding: 10px 0;
+	background: #b8696b;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+.btn-mais-detalhes:hover {
+	background: #a04e51;
+}
+
+main {
+	margin: 20px 0 50px 0;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	place-items: stretch;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 70vw;
+	align-items: stretch;
+}
+
+.titulo1 {
+	font-family: "Italiana", serif;
+	font-style: bold;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+	color: #b8696b;
+}
+
+/* Estilização dos cards de produtos*/
+.card {
+	background: #000000;
+	width: 330px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(204, 203, 203, 0.2);
+	padding: 20px;
+	font-family: "Cormorant Garamond", serif;
+	font-style: bold;
+	font-size: large;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+	color: white;
+	min-height: 500px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 1;
+}
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.preco {
+	font-family: "Cormorant Garamond", serif;
+	font-style: bold;
+	font-size: 1.5rem;
+	color: green;
+}
+
+/*Estiliazação do botão dos modais*/
+.btn-modal {
+	cursor: pointer;
+	position: relative;
+	padding: 10px 24px;
+	align-items: center;
+	font-size: 18px;
+	color: #b8696b;
+	border: 2px solid #b8696b;
+	border-radius: 34px;
+	background-color: transparent;
+	font-weight: 600;
+	transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+	overflow: hidden;
+	width: 300px;
+	display: block !important;
+	margin: 20px auto 0 auto;
+}
+
+
+.btn-modal::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 100px;
+	height: 80px;
+	border-radius: inherit;
+	scale: 0;
+	z-index: -1;
+	background-color: #b8696b;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-modal:hover::before {
+	scale: 3;
+}
+
+.btn-modal:hover {
+	color: #f9e9e9;
+	scale: 1.1;
+	box-shadow: 0 0px 20px #5f393a;
+}
+
+.btn-modal:active {
+	scale: 1;
+}
+
+.card h2 {
+	font-family: "Italiana", serif;
+	font-style: bold;
+	clear: left;
+	text-align: center;
+	color: #b8696b;
+	margin: 10px 0;
+}
+
+/* Estilização para o botão de orçamento */
+.btn-orcamento {
+	cursor: pointer;
+	position: relative;
+	padding: 10px 24px;
+	align-items: center;
+	font-size: 18px;
+	color: #b8696b;
+	border: 2px solid #b8696b;
+	border-radius: 34px;
+	background-color: transparent;
+	font-weight: 600;
+	transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+	overflow: hidden;
+	width: 300px;
+	display: block;
+	margin: 20px auto 0 auto;
+	text-decoration: none;
+}
+
+.btn-orcamento::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 100px;
+	height: 80px;
+	border-radius: inherit;
+	scale: 0;
+	z-index: -1;
+	background-color: #b8696b;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-orcamento:hover::before {
+	scale: 3;
+}
+
+.btn-orcamento:hover {
+	color: #f9e9e9;
+	scale: 1.1;
+	box-shadow: 0 0px 20px #5f393a;
+}
+
+.btn-orcamento:active {
+	scale: 1;
+}
+
+/* Estilização do botão carrinho  */
+.btn-mais-detalhes {
+	cursor: pointer;
+	position: relative;
+	padding: 10px 24px;
+	align-items: center;
+	font-size: 18px;
+	color: #b8696b;
+	border: 2px solid #b8696b;
+	border-radius: 34px;
+	background-color: transparent;
+	font-weight: 600;
+	transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+	overflow: hidden;
+	width: 300px;
+	display: block;
+	margin: 20px auto 0 auto;
+}
+
+.btn-mais-detalhes::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 100px;
+	height: 80px;
+	border-radius: inherit;
+	scale: 0;
+	z-index: -1;
+	background-color: #b8696b;
+	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-mais-detalhes:hover::before {
+	scale: 3;
+}
+
+.btn-mais-detalhes:hover {
+	color: #f9e9e9;
+	scale: 1.1;
+	box-shadow: 0 0px 20px #5f393a;
+}
+
+.btn-mais-detalhes:active {
+	scale: 1;
+}
+
+
+/*Estilização do ícone de coração nos cards*/
+.heart {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	cursor: pointer;
+	color: #b8696b;
+	transition: color 0.2s;
+}
+
+.heart:hover {
+	color: #f9e9e9;
+}
+
+/* Estilização do Modal de Orçamento */
+.modal-orcamento {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixa na tela */
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.modal-orcamento-content {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px; /* Largura máxima para modais */
+    font-family: 'Cormorant Garamond', serif;
+    font-style: bold;
+    font-size: large;
+    border-radius: 12px;
+    text-align: center;
+    position: relative; /* Para posicionar o botão de fechar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar*/
+}
+
+.modal-orcamento h2 {
+    font-family: 'Italiana', serif;
+    font-style: bold;
+    clear: left;
+    text-align: center;
+    color: #b8696b;
+    margin: 10px 0;
+}
+
+.fechar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.fechar:hover {
+    color: black;
+}
+
