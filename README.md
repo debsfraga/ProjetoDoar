@@ -86,5 +86,5 @@ Layout focado em destaque visual para fotos e vitrines
 
 ## Autoria
 
-Desenvolvido por Débs como parte do Projeto de Extensão Projeto Doar — Faculdade.
+Desenvolvido por Débora como parte do Projeto de Extensão Projeto Doar — Faculdade.
 Contato profissional disponível no próprio portfólio.
